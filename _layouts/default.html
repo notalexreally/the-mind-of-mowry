@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include head.html %}
+  <body>
+    <header class="site-header">
+      <div class="wrapper">
+        <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+        <nav class="site-nav">
+          <a href="{{ "/" | relative_url }}">Home</a>
+          <a href="{{ "/about/" | relative_url }}">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrapper">
+        <p>© {{ "now" | date: "%Y" }} {{ site.title }} — Built with honesty and consistency.</p>
+      </div>
+    </footer>
+  </body>
+</html>

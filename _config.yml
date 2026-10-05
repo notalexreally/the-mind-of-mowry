@@ -1,0 +1,11 @@
+title: "The Mind of Mowry"
+description: "Fitness, life, and personal growth — one honest post at a time."
+url: "https://themindofmowry.com"
+baseurl: ""
+
+theme: minima
+plugins:
+  - jekyll-feed
+
+markdown: kramdown
+permalink: pretty
